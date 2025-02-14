@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Simplified Arch Linux Installation with Archtitus">
+    <meta name="author" content="ZeroXClem/Archtitus">
 
-    <title>Basic Company Template for Bootstrap 3</title>
+    <title>Arch Linux Installation with Archtitus</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -26,14 +26,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Start Bootstrap</a>
+          <a class="navbar-brand" href="#">Archtitus</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#installation">Installation</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -44,8 +44,8 @@
 
       <div class="headline">
         <div class="container">
-          <h1>One Page Wonder</h1>
-          <h2>Will Knock Your Socks Off</h2>
+          <h1>Arch Linux Made Easy</h1>
+          <h2>Install Arch Linux with Archtitus</h2>
         </div>
       </div>
 
@@ -58,25 +58,60 @@
       <hr class="featurette-divider">
 
       <div class="featurette" id="about">
-        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-        <h2 class="featurette-heading">This First Heading <span class="text-muted">Will Catch Your Eye</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <img class="featurette-image img-circle img-responsive pull-right" src="https://avatars.githubusercontent.com/u/85449824?v=4" alt="Archtitus Logo" style="object-fit: contain;">
+        <h2 class="featurette-heading">What is Archtitus? <span class="text-muted">Simplified Arch Installation</span></h2>
+        <p class="lead">
+          Archtitus is an automated script that simplifies the process of installing Arch Linux.  It provides a guided, menu-driven approach, making Arch Linux accessible to a wider range of users.  It handles partitioning, package selection, and configuration, reducing the complexity of a traditional Arch installation.
+        </p>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="featurette" id="services">
-        <img class="featurette-image img-circle img-responsive pull-left" src="http://placecreature.com/500/500">
-        <h2 class="featurette-heading">The Second Heading <span class="text-muted">Is Pretty Cool Too.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <div class="featurette" id="installation">
+        <img class="featurette-image img-circle img-responsive pull-left"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arch_Linux_logo.svg/1200px-Arch_Linux_logo.svg.png" alt="Arch Linux Logo" style="object-fit: contain; max-height: 400px;">
+        <h2 class="featurette-heading">Installation Guide <span class="text-muted">Get Started in Minutes</span></h2>
+        <p class="lead">
+          Follow these simple steps to install Arch Linux using Archtitus:
+          <ol>
+              <li><strong>Download Arch Linux:</strong> Obtain the latest Arch Linux ISO image from the official Arch Linux website.</li>
+              <li><strong>Create Bootable Media:</strong>  Create a bootable USB drive or DVD from the ISO image.  Tools like Rufus, Etcher, or `dd` can be used.</li>
+              <li><strong>Boot from Media:</strong> Boot your computer from the newly created bootable media.  You may need to adjust your BIOS/UEFI settings to do this.</li>
+              <li><strong>Connect to the Internet:</strong> Ensure you have a working internet connection.  You can use `iwctl` for Wi-Fi or `ip link` and `dhcpcd` for wired connections.</li>
+              <li><strong>Clone the Archtitus Repository:</strong>
+                <pre><code>git clone https://github.com/ZeroXClem/Archtitus.git</code></pre>
+              </li>
+              <li><strong>Navigate to the Directory:</strong>
+                <pre><code>cd Archtitus</code></pre>
+              </li>
+              <li><strong>Run the Script:</strong>
+                <pre><code>sudo ./archtitus</code></pre>
+                Follow the on-screen prompts to configure your installation (partitioning, locale, hostname, user accounts, desktop environment, etc.).
+              </li>
+              <li><strong>Reboot:</strong> After the script completes, reboot your system.
+                <pre><code>sudo reboot</code></pre>
+              </li>
+          </ol>
+          <strong>Important Notes:</strong>
+          <ul>
+            <li>  Review the Archtitus documentation on the GitHub repository for detailed instructions and options.</li>
+            <li>  Back up any important data before proceeding, as the installation process will format your hard drive.</li>
+            <li> This is a simplified summary. Always consult the official documentation for the latest information.</li>
+          </ul>
+        </p>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="featurette" id="contact">
-        <img class="featurette-image img-circle img-responsive pull-right" src="http://placecreature.com/500/500">
-        <h2 class="featurette-heading">The Third Heading <span class="text-muted">Will Seal the Deal.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+        <h2 class="featurette-heading">Contact &amp; Support <span class="text-muted">Get Help</span></h2>
+        <p class="lead">
+          For questions, support, and contributions, visit the Archtitus GitHub repository:
+          <br>
+          <a href="https://github.com/ZeroXClem/Archtitus" target="_blank">github.com/ZeroXClem/Archtitus</a>
+          <br>
+          You can find issue tracking, documentation, and contact information there.
+        </p>
       </div>
 
       <!-- /END THE FEATURETTES -->
@@ -85,7 +120,7 @@
 
       <!-- FOOTER -->
       <footer>
-        <p>Copyright &copy; Company 2013</p>
+        <p>&copy; 2024 Archtitus Project</p>
       </footer>
       <!-- /END OF FOOTER -->
 
@@ -98,3 +133,4 @@
   </body>
 
 </html>
+
